@@ -1,0 +1,24 @@
+[alias]
+	contains = branch -vv -a --contains
+	bran = symbolic-ref -q --short HEAD
+	sub = submodule foreach
+	follow = log --follow
+	which = "symbolic-ref --short HEAD"
+	cgrep = log -S
+	unpushed = log @{u}..
+	unpulled = log ..@{u}
+[push]
+	default = upstream
+[merge]
+	conflictstyle = diff3
+[log]
+	decorate = true
+[core]
+	editor = vim
+	pager = less
+[pager]
+	diff = cat
+[color]
+	ui = always
+[color "status"]
+	branch = green
