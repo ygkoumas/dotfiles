@@ -16,4 +16,4 @@ Running the file include.sh, appends only the location of the repo files into th
 ```
 
 ###Update
-`git pull` at the repo folder
+`git pull` into repo folder
