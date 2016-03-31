@@ -1,3 +1,6 @@
+# installer instructions
+####source CURRENT_FILE_PATH
+
 # text colors
 RED="\[\033[0;31m\]"
 YELLOW="\[\033[0;33m\]"
