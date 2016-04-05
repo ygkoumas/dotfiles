@@ -13,7 +13,7 @@ LGREEN="\[\033[01;32m\]"
 
 # prompt with git branch
 function parse_git_branch () {
-	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+	git bran 2> /dev/null
 }
 PS1="$YELLOW\$(parse_git_branch) $BLUE\w$WHITE\$ "
 
@@ -26,4 +26,4 @@ else
 fi'
 alias st='git status'
 alias br='git bran'
-alias abs='git sub git branch |grep \*'
+alias abs='git sub git bran'
