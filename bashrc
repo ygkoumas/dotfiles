@@ -27,3 +27,5 @@ fi'
 alias st='git status'
 alias br='git bran'
 alias abs='git sub git bran'
+# remove color codes/special characters
+alias plaintext='sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"'
