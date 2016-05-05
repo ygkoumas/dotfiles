@@ -2,6 +2,8 @@
 ####source CURRENT_FILE_PATH
 
 # text colors
+GRAY_WHITE="\[\033[90;107m\]"
+BLUE_GRAY="\[\033[01;34;100m\]"
 RED="\[\033[0;31m\]"
 YELLOW="\[\033[0;33m\]"
 YELLOW_GRAY="\[\033[0;33;100m\]"
@@ -16,7 +18,7 @@ LGREEN="\[\033[01;32m\]"
 function parse_git_branch () {
 	git bran 2> /dev/null
 }
-PS1="$YELLOW_GRAY\$(parse_git_branch) $BLUE\w$WHITE\$ "
+PS1="$GRAY_WHITE\$(parse_git_branch)$BLUE_GRAY \w$WHITE\$ "
 
 # aliases
 alias pr='prv=$(pwd)'/' ; if [[ $prv == *"/git/"?* ]]
