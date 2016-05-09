@@ -32,3 +32,8 @@ alias br='git bran'
 alias abs='git sub git bran'
 # remove color codes/special characters
 alias plaintext='sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"'
+# firefox profile manager
+alias ffpm='firefox -ProfileManager -no-remote'
+alias ff='firefox -P default'
+alias ffdev='firefox -P DEV'
+
