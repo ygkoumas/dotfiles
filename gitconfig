@@ -11,6 +11,7 @@
 	cgrep = log -S
 	unpushed = log @{u}..
 	unpulled = log ..@{u}
+	sname = show --name-only
 [push]
 	default = upstream
 [merge]
