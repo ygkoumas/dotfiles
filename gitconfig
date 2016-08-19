@@ -12,6 +12,8 @@
 	unpushed = log @{u}..
 	unpulled = log ..@{u}
 	sname = show --name-only
+	ours = checkout --ours
+	theirs = checkout --theirs
 [push]
 	default = upstream
 [merge]
