@@ -25,7 +25,7 @@
 	pager = less
 	autocrlf = input
 [pager]
-	diff = cat
+	diff = less
 [color]
 	ui = always
 [color "status"]
