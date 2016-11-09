@@ -28,6 +28,9 @@ else
 	cd ~/git
 fi'
 
+# functions
+calc() { echo $(( $1 )); }
+
 # git
 alias st='git status'
 alias br='git bran'
