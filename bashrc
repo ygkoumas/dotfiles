@@ -47,6 +47,9 @@ alias la='ls -A'
 alias l='ls -CF'
 alias lll='ll'
 
+# find files
+alias search='find -iname'
+
 # functions
 # easy calculations
 calc() { echo $(( $1 )); }
