@@ -28,6 +28,9 @@ else
 	cd ~/git
 fi'
 
+# grep
+alias grep='grep --color=auto'
+
 # git
 alias st='git status'
 alias br='git bran'
