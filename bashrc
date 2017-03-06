@@ -60,3 +60,5 @@ calc() { echo $(( $1 )); }
 # grep recursively all files with $1 extension
 gre() { grep -r --include '*'$1  $2; }
 
+# try to cd lower on the filesystem
+fd() { cd $1 || fd '*/'$1; }
