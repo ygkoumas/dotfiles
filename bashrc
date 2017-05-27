@@ -62,3 +62,6 @@ gre() { grep -r --include '*'$1  $2; }
 
 # try to cd lower on the filesystem
 fd() { cd $1 || fd '*/'$1; }
+
+# show the weather of a given location
+weather() { curl 'wttr.in/'$1; }
