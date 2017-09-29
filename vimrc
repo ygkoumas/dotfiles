@@ -24,5 +24,7 @@ highlight Normal ctermbg=232
 
 highlight NonText ctermbg=234
 
+set tabstop=4
+
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=236  gui=NONE guifg=DarkGrey guibg=NONE
