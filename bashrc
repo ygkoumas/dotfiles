@@ -39,13 +39,17 @@ alias abs='git submodule --quiet foreach  git bran |sort -u'
 # remove color codes/special characters
 alias plaintext='sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"'
 
+#tcl
+#create a tcl executable file
+tcltouch() { echo '#!/usr/bin/tclsh' >> $1; echo $2 >> $1; chmod +x $1; }
+
 # firefox profile manager
 alias ffpm='firefox -ProfileManager -no-remote'
 alias ff='firefox -P default'
 alias ffdev='firefox -P DEV'
 
 # ls
-alias ll='ls -l'
+alias ll='ls -la'
 alias la='ls -A'
 alias l='ls -CF'
 alias lll='ll'
@@ -65,3 +69,6 @@ fd() { cd $1 || fd '*/'$1; }
 
 # show the weather of a given location
 weather() { curl 'wttr.in/'$1; }
+
+# print a new line after output of every command
+PROMPT_COMMAND="echo"
