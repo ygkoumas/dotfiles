@@ -21,12 +21,7 @@ function parse_git_branch () {
 PS1="$GRAY_WHITE\$(parse_git_branch)$BLUE_GRAY \w$WHITE\$ "
 
 # aliases
-alias pr='prv=$(pwd)'/' ; if [[ $prv == *"/git/"?* ]]
-then
-	cd ${prv/${prv#/*git/*/}/};
-else
-	cd ~/git
-fi'
+alias pr='cd $(git root)'
 
 # grep
 alias grep='grep --color=auto'

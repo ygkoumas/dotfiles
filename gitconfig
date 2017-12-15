@@ -14,6 +14,7 @@
 	sname = show --name-only
 	ours = checkout --ours
 	theirs = checkout --theirs
+	root = rev-parse --show-toplevel
 [push]
 	default = upstream
 [merge]
