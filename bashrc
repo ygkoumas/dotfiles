@@ -52,6 +52,9 @@ alias lll='ll'
 # find files
 alias search='find -iname'
 
+# use python without creating pyc files
+alias pythonr='python -B'
+
 # functions
 # easy calculations
 calc() { echo $(( $1 )); }
