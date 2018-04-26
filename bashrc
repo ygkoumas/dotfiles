@@ -62,15 +62,15 @@ calc() { echo $(( $1 )); }
 # grep recursively all files with $1 extension
 gre() { grep -r --include '*'$1  $2; }
 
-# git recursively, similar to "git submodule foreach git"
+# git recursively, similar to "git submodule foreach"
 rgit()
 {
 	for i in $(echo */);
 	do
-		echo '';
+		echo "";
 		echo $i;
 		cd $i;
-		git $1 $2 $3 $4;
+		git "$@";
 		cd ..;
 	done
 }
