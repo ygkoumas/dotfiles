@@ -29,7 +29,7 @@ set shiftwidth=4
 
 "display tabs and trailing space
 set list listchars=tab:.\ ,trail:X
-highlight SpecialKey ctermfg=DarkGray
+highlight SpecialKey ctermfg=DarkGray ctermbg=16
 
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=236  gui=NONE guifg=DarkGrey guibg=NONE
