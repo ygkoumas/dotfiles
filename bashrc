@@ -83,3 +83,6 @@ weather() { curl 'wttr.in/'$1; }
 
 # print a new line after output of every command
 PROMPT_COMMAND="echo"
+
+# set generic CDPATH
+CDPATH=.:$HOME:$HOME/git
