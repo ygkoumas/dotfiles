@@ -33,3 +33,6 @@ highlight SpecialKey ctermfg=DarkGray ctermbg=16
 
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=236  gui=NONE guifg=DarkGrey guibg=NONE
+
+"open files in the last closed position
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
