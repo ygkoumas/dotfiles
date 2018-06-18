@@ -81,6 +81,19 @@ fd() { cd $1 || fd '*/'$1; }
 # show the weather of a given location
 weather() { curl 'wttr.in/'$1; }
 
+# fibonacci function
+fib ()
+{
+	if [[ $1 -le 1 ]];
+	then
+		echo 1;
+	else
+		l1=$(fib $[$1-1]);
+		l2=$(fib $[$1-2]);
+		echo $[l1 + l2];
+	fi
+}
+
 # print a new line after output of every command
 PROMPT_COMMAND="echo"
 
